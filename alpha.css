@@ -1,0 +1,394 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-image:url("./images/building.jpg");
+  background-repeat:no-repeat;
+  background-size:100%;
+  background-color: #f5f5f5;
+  font-family: 'Source Sans 3', sans-serif;
+  
+}
+header{
+  display:flex;
+  justify-content: space-between;
+  align-items:center;
+  padding: 0px 1.5%;/* distance btw content and border*/
+}
+#left h1{
+  /* 1 rem=16px when we want to make huge changes go for rem, when we want to make smaller changes go for px*/
+  font-size: 1rem;
+  color: white;
+}
+#left h1 span{
+  font-weight:100;
+}
+#cont{
+  display:flex;
+  align-items:center;
+  list-style-type:none;
+  margin: 0;
+}
+#cont a{
+  text-decoration:none;
+  padding: 1rem;
+  display: block;
+  color: white;
+}
+#cont button{
+  width: 5rem;
+  height: 2rem;
+  border-radius:5px;
+  color: white;
+  background-color: transparent;
+  border:2px solid white;
+}
+#menu{
+  list-style-type:none;
+  background-color: white;
+  position: absolute;
+  top:100%;
+  right:0%;
+  padding: 0;
+  width: 180%;
+  display:none;
+}
+#drop{
+  position: relative;/* now it will yake deop as a parent */
+}
+#menu a{
+  color: gray;
+  border-bottom:2px solid grey;
+}
+#drop:hover #menu{
+  display:block;
+}
+#menu a:hover{
+  color:white;
+  background-color: #ff8955;
+}
+#smenu{
+  margin:0;
+  list-style-type:none;
+  padding:0;
+  background-color:white;
+  position: absolute;
+  top:0%;
+  right:100%;
+  width: 100%;
+  display:none;
+  
+}
+#sdrop:hover #smenu{
+  display: block;
+}
+#sdrop{
+  position: relative;
+}
+#alpha{
+  /* width: 40%;
+  margin:auto;when we want content in center and the content is huge */
+  text-align:center; /*  only when there's less content*/
+  margin-top: 7rem;
+}
+#alpha h1{
+  color: white;
+  font-size:2.5rem;
+  margin-bottom:0;
+}
+#alpha p{
+  color: white;
+  font-size:1.3rem;
+  margin-bottom:2rem;
+}
+#alpha button{
+  width: 15%;
+  height: 3rem;
+  border-radius:5px;
+  border:none;
+  color: grey;
+  margin-right: 1rem;
+}
+#alpha #learn{
+  background-color: transparent;
+  border:2px solid #bfbfaf;
+}
+#mobile{
+  background-color: white;
+  text-align:center;
+  width: 70%;
+  margin: auto;
+  border-radius:5px;
+  padding-top:2rem;
+  margin-top: 2rem;
+  color: grey;
+}
+#mobile h1{
+  font-size:2rem;
+}
+#mobile p{
+  font-size:1rem;
+  border-top:2px solid grey;
+  width: 60%;
+  margin: auto;
+  padding-top:2rem;
+  padding-bottom:2rem;
+}
+#mobile img{
+  width: 100%;
+}
+#icon{
+  background-color: white;
+  width: 70%;
+  margin: auto;
+  margin-top: 2rem;
+  border-radius:5px;
+}
+#icon div{
+  width: 46%;
+  display:inline-block;
+  padding-top: 2rem;
+  text-align:center;
+}
+.fa-bolt{
+  color:white;
+  background-color: #e89980;
+  font-size:2rem;
+  border-radius:90%;
+   padding: 2rem 2.5rem;
+}
+.fa-chart-area{
+  color:white;
+  background-color: #7fcdb8;
+  font-size:2rem;
+  border-radius:90%;
+  padding: 2rem 2rem;
+}
+.fa-cloud{
+  color:white;
+  background-color: #90b0ba;
+  font-size:2rem;
+  border-radius:90%;
+  padding: 1.7rem 1.5rem;
+}
+.fa-lock{
+  color:white;
+  background-color: #e5cb95;
+  font-size:2rem;
+  border-radius:90%;
+  padding: 2rem 2rem;
+}
+#div1{
+  border-right:2px solid #e5e5e5;
+  border-bottom:2px solid #e5e5e5;
+  position:relative;
+  top:2px;
+  left:3px;
+}
+#div4{
+  border-top:2px solid #e5e5e5;
+  border-left:2px solid #e5e5e5;
+}
+#card{
+  width: 70%;
+  margin: auto;
+  margin-top:2rem;
+  display:flex;
+  justify-content:space-between;/* for horizontal placement*/
+}
+#card div{
+  background-color: white;
+  width: 48%;
+  border-radius:5px;
+
+text-align:center;
+}
+#card div img{
+  width: 100%;
+  border-radius:5px 5px 0px 0px;
+}
+.more{
+  background-color: transparent;
+  border:2px solid #bfbfaf;
+  color:grey;
+  border-radius:5px;
+  width: 35%;
+  height: 3rem;
+  margin-bottom:15px;
+}
+#signup{
+  margin-top:5rem;
+  background-color: #e89980  ;
+  text-align:center;
+  color:white ;
+}
+#signup h1{
+   padding-top:3rem;
+   font-size:2rem;
+   
+}
+#signup input{
+   background-color: #e799875f;
+   height:2.3rem;
+   width: 14rem;
+   border-radius:7px;
+   border:none;
+}
+#signup button{
+   background-color: white;
+   height:2.3rem;
+   width: 6rem;
+   border-radius:7px;
+   border:0;  
+   color: #e89980;
+    
+}
+#signup #btn{
+  margin-left:1rem;
+}
+hr{
+  margin-left:1rem;
+  margin-right:1rem;
+}
+footer{
+  padding:5rem;
+  text-align:center;
+  /* display:flex; */
+
+}
+footer .fa-brands{
+  color: #c5c5d7ca;
+  padding-right:1rem;
+ font-size:2rem ;
+}
+footer .fa-solid{
+  color: #c5c5d7ca;
+  padding-right:1rem;
+  font-size:2rem ;
+}
+#mobmenu{
+  display:none;
+}    
+/* for inline we cant change the width, but for inline block we can change the width*/
+
+
+@media(max-width:600px)
+{
+body {
+  background-size: 200%;
+  background-position-x: center;  
+}
+#mobmenu{
+  display:inline-block;
+  color: white;
+  background-color:#0d111365;
+  padding: 10px 25px ;
+  border-radius:7px;
+  margin-top: 0.5rem;
+  margin-left: 0.5rem;
+}  
+header{
+  display:none;
+}
+#alpha{
+  width: 90;
+  margin: auto;
+  margin-top: 0rem;
+}
+#alpha h1{
+  font-size:2rem;
+}
+#alpha p{
+  font-size:1.1rem;
+  }
+#alpha button{
+  width: 80%;
+  margin-bottom: 1rem;
+}
+#mobile{
+  width: 100%;
+  border-radius:0px;    
+  margin-top: 1rem;
+}
+#mobile h1{
+  font-size:1.6rem;
+}
+#mobile p{
+  font-size:1.1rem;
+  width: 95%;
+}
+br{
+  display:none;
+}
+#icon{
+  width: 100%;
+  margin-top: 0.5rem;
+  }
+#icon div{
+  width: 100%;
+  border-bottom:1px solid grey;
+}
+#div1{
+  border-right:0px;
+  border-bottom:0px;
+  top:0px;
+  left:0px;
+}
+#div4{
+  border-right:0px;
+  border-bottom:0px;
+  top:0px;
+  left:0px;
+}
+#card{
+  width: 100%;
+  margin-top:0rem;
+  display:inline-block;
+}
+#card div{
+  width: 100%;
+  margin-bottom:20px;
+}
+#card div img{
+  width: 100%;
+  border-radius:5px 5px 0px 0px;
+}
+.more{
+  width: 80%;
+}
+#signup{
+  width: 100%;
+  margin-top:0rem;
+  padding-top:30px;
+}
+#signup h1{
+   margin-top:0rem;
+   font-size:2rem;
+   
+}
+#signup p{
+   padding-bottom:0px;
+   margin-right:10px;
+}
+#signup input{
+   height:40px;
+   width: 80%;
+   padding-left:20px;
+   margin-left:20px;
+}
+#signup button{
+   background-color: white;
+   height:2.3rem;
+   width: 6rem;
+   border-radius:7px;
+   border:0;  
+   color: #e89980;
+    
+}
+#signup #btn{
+   height:40px;
+   width: 85%;
+   padding-left:20px;
+   margin-top:20px;
+   margin-bottom:20px;
+}
+}
